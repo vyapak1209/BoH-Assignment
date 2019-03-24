@@ -1,0 +1,75 @@
+
+.qz443AnswerCard {
+  background: #f3dccd;
+  width: 450px;
+  height: 50px;
+  padding-left: 10px;
+  margin: 2px;
+  border-radius: 5px;
+  color: #30415d;
+  font-family: 'Bree Serif', serif;
+  font-size: 17px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.qz443AnswerCard:hover {
+  background: #edd1c0;
+}
+
+.qz443StatusIcon {
+  margin-left: 10px;
+}
+
+.qz443QuestionCard {
+  width: 750px;
+  height: 450px;
+  background: #f7eee8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.qz443ViewPort {
+  justify-content: center;
+  margin-top: 150px;
+  flex-direction: column;
+}
+
+.qz443CardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.qz443QuesCounterDiv {
+  color: #30415d;
+  font-size: 20px;
+  font-family: 'Bree Serif', serif;
+}
+
+.qz443QuesDiv {
+  margin-top: 20px;
+  color: #30415d;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+}
+
+.qz443ScoreDiv {
+  margin-bottom: 20px;
+  color: #f8eee7;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+  width: 750px;
+  text-align: right;
+}
+
+.qz443LoaderDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 450px;
+}

@@ -1,0 +1,8 @@
+body {
+  background: #cf6766;
+}
+
+.onMount-appear.onMount-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
+}

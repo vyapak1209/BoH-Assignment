@@ -1,0 +1,60 @@
+.hs05StartScreenDiv {
+  width: 750px;
+  height: 450px;
+  background: #f7eee8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px;
+}
+
+.hs05ViewPort {
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.hs05CardContent {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.hs05Label {
+  width: 25%;
+  color: #30415d;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hs05Item {
+  color: #30415d;
+  font-size: 16px;
+  font-family: 'Bree Serif', serif;
+  margin-bottom: 20px;
+  width: 25%;
+  text-align: center
+}
+
+.hs05FullWidth {
+  width: 100%;
+}
+
+.hs05NoHigh {
+  color: #30415d;
+  font-size: 30px;
+  font-family: 'Bree Serif', serif;
+}
+
+.hs05RedirectBtn {
+  width: 175px;
+  margin-top: 20px;
+  color: #f7eee8;
+  background: #cf6766;
+  font-family: 'Bree Serif', serif;
+}
+

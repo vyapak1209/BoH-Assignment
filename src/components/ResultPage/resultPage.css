@@ -1,0 +1,81 @@
+.rp78ResultCard {
+  width: 750px;
+  height: 450px;
+  background: #f7eee8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+}
+
+.rp78ViewPort {
+  justify-content: center;
+  margin-top: 150px;
+  flex-direction: column;
+}
+
+.rp78CardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.rp78AliasHeading {
+  color: #30415d;
+  font-size: 35px;
+  font-family: 'Bree Serif', serif;
+}
+
+.rp78Score {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #30415d;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+  min-width: 450px;
+  text-align: center;
+}
+
+.rp78Diff {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #30415d;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+  min-width: 450px;
+  text-align: center;
+}
+
+
+.rp78Category {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #30415d;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+  min-width: 450px;
+  text-align: center;
+}
+
+.rp78Label {
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+}
+
+.rp78RedirectBtn {
+  width: 175px;
+  margin-top: 20px;
+  color: #f7eee8;
+  background: #cf6766;
+  font-family: 'Bree Serif', serif;
+}
+
+

@@ -1,0 +1,84 @@
+
+select:focus{
+  outline-width: 0px;
+}
+
+.hp012StartScreenDiv {
+  width: 750px;
+  height: 450px;
+  background: #f7eee8;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center
+}
+
+.hp012ViewPort {
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.hp012CardHeading {
+  color: #30415d;
+  font-family: 'Bree Serif', serif;
+  font-size: 35px;
+  margin-left: 10px;
+}
+
+.hp012InputFieldsDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 350px;
+}
+
+.hp012InputField {
+  height: 30px;
+  outline: none;
+  width: 100%;
+  color: #30415d;
+  border: none;
+  background: transparent;
+  font-family: 'Bree Serif', serif;
+  margin-top: 20px;
+}
+
+.hp012CatDropDownDiv {
+  margin-bottom: -10px;
+}
+
+.hp012DiffDropDownDiv {
+  margin-top: -10px;
+}
+
+.hp012CatDropdown {
+  display: block;
+  border: 0px;
+  width: 350px;
+  height: 45px;
+  font-size: 15px;
+  font-family: 'Bree Serif', serif;
+  color: #30415d;
+  background-color: transparent;
+}
+
+.hp012DiffDropdown {
+  display: block;
+  width: 350px;
+  height: 45px;
+  font-size: 15px;
+  font-family: 'Bree Serif', serif;
+  color: #30415d;
+  background-color: transparent;
+  outline-width: 0px;
+  outline-color: #30415d;
+}
+
+.hp012StartTriviaBtn {
+  width: 175px;
+  margin-top: 20px;
+  color: #f7eee8;
+  background: #cf6766;
+  font-family: 'Bree Serif', serif;
+}
