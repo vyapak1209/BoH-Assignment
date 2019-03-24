@@ -54,7 +54,7 @@ export default class HighscorePage extends Component {
 
         {this.getScores()}
 
-        <a className="waves-effect waves-light btn hs05RedirectBtn" onClick={this.redirectToHome} style={{color: '#f7eee8', background: '#cf6766'}}>Break Some Eggs</a>
+        <a className="waves-effect waves-light btn hs05RedirectBtn" onClick={this.redirectToHome} style={{color: '#f7eee8', background: '#cf6766'}}>Play Trivia</a>
       </div>
     )
   }

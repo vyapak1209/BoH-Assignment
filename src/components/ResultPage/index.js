@@ -55,7 +55,7 @@ class ResultPage extends PureComponent {
           <div className="rp78Label">Score  -</div>  {this.props.score} out of 10
         </div>
 
-        <a className="waves-effect waves-light btn rp78RedirectBtn" onClick={this.redirectToHome} style={{color: '#f7eee8', background: '#cf6766'}}>Break Some Eggs</a>
+        <a className="waves-effect waves-light btn rp78RedirectBtn" onClick={this.redirectToHome} style={{color: '#f7eee8', background: '#cf6766'}}>Play Again</a>
       </div>
     )
   }
