@@ -73,3 +73,11 @@
   justify-content: center;
   min-height: 450px;
 }
+
+.qz443CorrectAnswer {
+  background: green;
+}
+
+.qz443WrongAnswer {
+  background: red;
+}
