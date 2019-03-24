@@ -81,3 +81,25 @@
 .qz443WrongAnswer {
   background: red;
 }
+
+.qz443NoQuestionsDiv {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.qz443NoQuestionsText {
+  color: #f8eee7;
+  font-size: 30px;
+  font-family: 'Bree Serif', serif;
+}
+
+.qz443RedirectBtn {
+  width: 175px;
+  margin-top: 50px;
+  color: #f7eee8;
+  background: #cf6766;
+  font-family: 'Bree Serif', serif;
+}

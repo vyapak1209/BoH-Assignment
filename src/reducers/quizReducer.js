@@ -1,6 +1,6 @@
 import { FETCH_QUESTIONS, INC_SCORE, SET_DETAILS, RESET_SCORE } from '../actions/types'
 
-const initialState = { questions: [], score: 0, alias: '', diff: 'any', cat: 'any' } // the initial cat and diff will always be 'any' in case the player doesn't choose
+const initialState = { questions: null, score: 0, alias: '', diff: 'any', cat: 'any' } // the initial cat and diff will always be 'any' in case the player doesn't choose
 
 export default function (state = initialState, action) {
   switch (action.type) {

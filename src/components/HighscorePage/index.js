@@ -64,7 +64,7 @@ export default class HighscorePage extends Component {
     return (
       <div className="hs05FullWidth">
         {this.state.highscore.length > 0 ? this.state.highscore.map((item, index) => {
-          if(index > 6) { // showing only first 7 high score entries
+          if(index > 5) { // showing only first 6 high score entries
             return null;
           }
           return (

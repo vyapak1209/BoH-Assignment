@@ -28,7 +28,7 @@ class QuizPage extends PureComponent {
 
 
   componentDidUpdate() {
-    if(this.state.counter === 10) { // As soon as the counter reaches 10 => redirect to result page
+    if (this.state.counter === 10) { // As soon as the counter reaches 10 => redirect to result page
       let url = ROUTES.QUIZ_BASE + ROUTES.RESULT_PAGE;
       this.props.history.replace(url)
     }
@@ -36,6 +36,7 @@ class QuizPage extends PureComponent {
 
 
   render() {
+    console.log(this.props.questions)
     return (
       <div>
         <Header />
@@ -48,22 +49,7 @@ class QuizPage extends PureComponent {
                   Your Score: {this.props.score}/{this.state.counter}
                 </div>
 
-                {this.props.questions.length > 0 ? this.props.questions.map((item, index) => {
-                  if (index === this.state.counter) {
-                    return (
-                      <Question
-                        key={index.toString()}
-                        counter={index}
-                        item={item}
-                        submitAnswer={this.onSubmitAnswer.bind(this)}
-                      />
-                    )
-                  } else {
-                    return null;
-                  }
-                }) : this.getLoader()
-
-                }
+                {this.getRequiredScreen()}
 
               </div>
             </div>
@@ -71,6 +57,43 @@ class QuizPage extends PureComponent {
         </div>
       </div>
     )
+  }
+
+
+  getRequiredScreen = () => {
+
+    if (!this.props.questions) {
+      return this.getLoader()
+    }
+
+    if (this.props.questions && this.props.questions.length > 0) {
+      return this.props.questions.map((item, index) => {
+        if (index === this.state.counter) {
+          return (
+            <Question
+              key={index.toString()}
+              counter={index}
+              item={item}
+              submitAnswer={this.onSubmitAnswer.bind(this)}
+            />
+          )
+        } else {
+          return null;
+        }
+      })
+    }
+
+    if (this.props.questions && this.props.questions.length === 0) {
+      return (
+        <div className = "qz443NoQuestionsDiv">
+          <div className="qz443NoQuestionsText">
+            There are no questions in this category with {this.props.diff} difficulty.
+          </div>
+          <a className="waves-effect waves-light btn qz443RedirectBtn" onClick={this.redirectToHome} style={{color: '#cf6766', background: '#f7eee8'}}>Back To Home</a>
+        </div>
+      )
+    }
+
   }
 
 
@@ -86,6 +109,11 @@ class QuizPage extends PureComponent {
       }
     })
 
+  }
+
+
+  redirectToHome = () => {
+    this.props.history.replace('/')
   }
 
 
@@ -111,7 +139,8 @@ class QuizPage extends PureComponent {
 
 const mapStateToProps = state => ({
   questions: state.quiz.questions,
-  score: state.quiz.score
+  score: state.quiz.score,
+  diff: state.quiz.diff
 })
 
 export default connect(mapStateToProps, { fetchQuestions, incScore, resetScore })(QuizPage)
